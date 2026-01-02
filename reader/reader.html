@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reader Page</title>
+  <link rel="stylesheet" href="reader.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <button id="toggle-chat">Chat</button>
+  </div>
+
+  <div class="container">
+    <div class="paper-view">
+      <h1 id="paper-title">Paper Title</h1>
+      <h3 id="paper-authors">Authors: </h3>
+      <p id="paper-abstract"><strong>Abstract:</strong> </p>
+      <iframe id="pdf-frame" width="100%" height="600px" style="border: none;"></iframe>
+    </div>
+    <div class="resizer hidden" id="resizer"></div>
+    <div class="chat-panel hidden" id="chat-panel">
+      <div class="chat-header">Personal Assistant</div>
+      <div class="chat-box" id="chat-box"></div>
+      <div class="chat-input">
+        <input type="text" id="chat-input" placeholder="Ask a question..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="reader.js"></script>
+</body>
+</html>
